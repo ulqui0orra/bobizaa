@@ -12,7 +12,7 @@ let handler = async (m, { conn }) => {
 }
 handler.help = ['alive']
 handler.tags = ['infobot']
-handler.command = /^(alive)$/i
+handler.command = /^(alive|حي|حى)$/i
 
 
 export default handler
