@@ -10,14 +10,13 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['201225188065', 'Ulquiorra', true],
+  ['+201225188065', 'Ulquiorra', true],
 
-  ['201225188065','Ulquiorra', true],
-  ['201225188065']
+  ['+201225188065','Ulquiorra', true]
 ];
 
-global.suittag = ['201225188065'];
-global.prems = ['201225188065'];
+global.suittag = ['+201225188065'];
+global.prems = ['+201225188065'];
 
 global.packname = 'Ulquiorra';
 global.author = 'Bot';
@@ -52,7 +51,7 @@ global.mysticbot = 'https://instagram.com/noureddine_ouafy';
 global.waitt = '*[ ⏳ ] LOADING...*';
 global.waittt = '*[ ⏳ ] LOADING...*';
 global.waitttt = '*[ ⏳ ] LOADING...*';
-global.nomorown = '201225188065';
+global.nomorown = '+201225188065';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
