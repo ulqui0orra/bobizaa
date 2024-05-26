@@ -47,7 +47,7 @@ let timeout = 0xea60,
 handler[_0x449b10(0x93)] = ['guessflag'], handler[_0x449b10(0x83)] = [_0x449b10(0x8c)], handler['command'] = /^عين/i;
 
 function _0x4fe7() {
-    const _0xb7467a = ['20480148VuJZms', 'help', 'img', 'reply', '4467152giXWck', '274796fpuZAi', 'name', 'trim', 'json', '264490nVfzjl', '5916460JyWjWb', 'toUpperCase', 'toFixed', 'https://raw.githubusercontent.com/luffy716716/12321/main/%D8%B9%D9%8A%D9%86.json', 'tags', ' نقاط┇\x0a『🍷𝐌𝐀𝐑𝐘𝐍┊🤖┊𝐁𝐎𝐓🍷』\x0a     ', '299824syqMsl', '❮ ⌛┇انتهي الوقت┇⌛❯\x0a❐↞┇الاجـابـة✅↞ ', 'floor', '*\x0a  ❐↞┇الـوقـت⏳↞ *', '6YkCaUJ', '8NysbTA', '7268940cGjonP', 'game', 'chat', 'tebakbendera', ' ┇\x0a  *استخدم .انسحب للأنسحاب*\x0a  ❐↞┇الـجـائـزة💰↞ ', 'random', 'length'];
+    const _0xb7467a = ['20480148VuJZms', 'help', 'img', 'reply', '4467152giXWck', '274796fpuZAi', 'name', 'trim', 'json', '264490nVfzjl', '5916460JyWjWb', 'toUpperCase', 'toFixed', 'https://raw.githubusercontent.com/luffy716716/12321/main/%D8%B9%D9%8A%D9%86.json', 'tags', ' نقاط┇\x0a『🍷𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒┊🤖┊𝔹𝕠𝕥🍷』\x0a     ', '299824syqMsl', '❮ ⌛┇انتهي الوقت┇⌛❯\x0a❐↞┇الاجـابـة✅↞ ', 'floor', '*\x0a  ❐↞┇الـوقـت⏳↞ *', '6YkCaUJ', '8NysbTA', '7268940cGjonP', 'game', 'chat', 'tebakbendera', ' ┇\x0a  *استخدم .انسحب للأنسحاب*\x0a  ❐↞┇الـجـائـزة💰↞ ', 'random', 'length'];
     _0x4fe7 = function () {
         return _0xb7467a;
     };
