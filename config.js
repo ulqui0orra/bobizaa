@@ -10,9 +10,8 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['201225188065', 'Ulquiorra', true],
-
-  ['201225188065','Ulquiorra', true]
+  
+  ['201225188065', 'Ulquiorra', true]
 ];
 
 global.suittag = ['201225188065'];
@@ -46,12 +45,12 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 global.wm2 = `${dia} ${fecha}\nBOBIZA`;
 global.gt = 'BOBIZA';
 global.mysticbot = 'The BOBIZA';
-global.md = 'https://instagram.com/noureddine_ouafy';
-global.mysticbot = 'https://instagram.com/noureddine_ouafy';
+global.md = 'https://wa.me/201225188065';
+global.mysticbot = 'https://wa.me/201225188065';
 global.waitt = '*[ ⏳ ] LOADING...*';
 global.waittt = '*[ ⏳ ] LOADING...*';
 global.waitttt = '*[ ⏳ ] LOADING...*';
-global.nomorown = '+201225188065';
+global.nomorown = '201225188065';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
