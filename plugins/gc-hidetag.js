@@ -1,14 +1,15 @@
-import { generateWAMessageFromContent } from '@adiwajshing/baileys'
-let handler = async (m, { conn, text, participants, isOwner, isAdmin }) => {
-let users = participants.map(u => conn.decodeJid(u.id))
-let q = m.quoted ? m.quoted : m || m.text || m.sender
-let c = m.quoted ? await m.getQuotedObj() : m.msg || m.text || m.sender
-let msg = conn.cMod(m.chat, generateWAMessageFromContent(m.chat, { [m.quoted ? q.mtype : 'extendedTextMessage']: m.quoted ? c.message[q.mtype] : { text: '' || c }}, { quoted: m, userJid: conn.user.id }), text || q.text, conn.user.jid, { mentions: users })
-await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
+let handler = async (m, { conn, text, participants}) => {
+	
+    let users = participants.map(u => u.id).filter(v => v !== conn.user.jid)
+    if (!m.quoted) throw `.منشن الرسالة`
+    conn.sendMessage(m.chat, { forward: m.quoted.fakeObj, mentions: users } )
 }
-handler.help = ['hidetag']
+
+handler.help = ['totag']
 handler.tags = ['group']
-handler.command = /^(مخفي|وهمي)$/i
-handler.group = true
+handler.command = /^مخفي$/i
+
 handler.admin = true
+handler.group = true
+
 export default handler
