@@ -23,15 +23,15 @@ if (/audio/.test(mime)) {
 let ran = getRandom('.mp3')
 let filename = join(__dirname, '../tmp/' + ran)
 let media = await q.download(true)
-exec(`ffmpeg -i ${media} ${set} ${filename}`, async (err, stderr, stdout) => {
+exec(ffmpeg -i ${media} ${set} ${filename}, async (err, stderr, stdout) => {
 await unlinkSync(media)
-if (err) throw `*خطأ!*`
+if (err) throw *خطأ!*
 let buff = await readFileSync(filename)
 conn.sendFile(m.chat, buff, ran, null, m, true, {
 type: 'audioMessage', 
 ptt: true 
 })})
-} else throw `*رد ع الصوت ال انت عاوز تعمله ايفيكت يحب ${usedPrefix + command}*`
+} else throw *رد ع الصوت ال انت عاوز تعمله ايفيكت يحب ${usedPrefix + command}*
 } catch (e) {
 throw e
 }}
@@ -41,4 +41,4 @@ handler.command = /^(عميق2|منفوخ|عميق|تحسين|سريع|تسري�
 export default handler
 
 const getRandom = (ext) => {
-return `${Math.floor(Math.random() * 10000)}${ext}`}
+return ${Math.floor(Math.random() * 10000)}${ext}}
