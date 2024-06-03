@@ -1055,7 +1055,7 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await conn.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                                    m.reply(`*[ ⚠️ مرحبا سيدي شادو هذا الامر خاطئ ⚠️ ]*\n\n*—◉ الخطأ:* ${m.plugin}\n*—◉ المستخدم:* ${m.sender}\n*—◉ الامر:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] قم بابلاغ المطور ليعطيك حلا لاستخدام الامر #reporte*`.trim(), data.jid)
+                                    m.reply(`*[ ⚠️ مرحبا سيدي الكيورا هذا الامر خاطئ ⚠️ ]*\n\n*—◉ الخطأ:* ${m.plugin}\n*—◉ المستخدم:* ${m.sender}\n*—◉ الامر:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] قم بابلاغ المطور ليعطيك حلا لاستخدام الامر #reporte*`.trim(), data.jid)
                     }
                 }
             }
@@ -1141,7 +1141,7 @@ if (m.text && user.banned && !isROwner) {
     const messageNumber = user.bannedMessageCount + 1;
     const messageText = `❰ ⚠️ ❱ *انت محظور* ❰ ⚠️ ❱\nتحذير ${messageNumber}/3 (${messageNumber} من 3)${user.bannedReason ? `\n*سبب:* *${user.bannedReason}*` : ''}
 *👉يمكنك الاتصال بمالك الروبوت إذا كنت تعتقد أنه خطأ (لديك دليل) للتعامل مع سبب الحظر الخاص بك*
-👉 201508624830
+👉 201225188065
 `.trim();
     
     //m.reply(messageText);
@@ -1341,7 +1341,7 @@ if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - 
         if (opts['autoread'])
             await this.readMessages([m.key])
         
-        if (!m.fromMem && m.text.match(/(عبدالرحمن|@01063720595|بوت|شادو|Shadow| bot|shadow)/gi)) {
+        if (!m.fromMem && m.text.match(/(اولكيورا|@201225188065|بوت|الكيورا|Ulquiorra|bot|ulquiorra)/gi)) {
         let emot = pickRandom(["🎃", "❤", "😘", "😍", "💕", "😎", "🙌", "⭐", "👻", "🔥"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
         function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
@@ -1437,8 +1437,8 @@ export async function callUpdate(callUpdate) {
     let callmsg = await this.reply(nk.from, `مرحبا *@${nk.from.split('@')[0]}*, ال ${nk.isVideo ? 'مكالمات فيديو' : 'المكالمات'} غير مسموح به ، سيتم حظرك.\n-\nإذا اتصلت بالخطأ ، فاتصل بمنشئ المحتوى الخاص بي لإلغاء حظرك!`, false, { mentions: [nk.from] })
     //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
     //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-     let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Abdelrahman Elshamhout 👑;;;\nFN:Abdelrahman Elshamhout 👑\nORG:Abdelrahman Elshamhout 👑\nTITLE:\nitem1.TEL;waid=201508624830:+201508624830 \nitem1.X-ABLabel:Abdelrahman Elshamhout👑\nX-WA-BIZ-◤Shadow - Bot ◢:[❗] كلم الرقم ده - المطور.\nX-WA-BIZ-NAME:Abdelrahman Elshamhout 👑\nEND:VCARD`
-    await this.sendMessage(nk.from, { contacts: { displayName: 'Abdelrahman Elshamhout 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
+     let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Ulquiorra 👑;;;\nFN:Ulquiorra 👑\nORG:Ulquiorra 👑\nTITLE:\nitem1.TEL;waid=201225188065:+201225188065 \nitem1.X-ABLabel:Ulquiorra👑\nX-WA-BIZ-◤Ulquiorra - Bot ◢:[❗] كلم الرقم ده - المطور.\nX-WA-BIZ-NAME:Abdelrahman Elshamhout 👑\nEND:VCARD`
+    await this.sendMessage(nk.from, { contacts: { displayName: 'Ulquiorra 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
     await this.updateBlockStatus(nk.from, 'block')
     }
     }
@@ -1488,7 +1488,7 @@ global.dfail = (type, m, conn) => {
         restrict: '*『 الميزه دي المالك لغيها ! 』*'
     }[type]
     let aa = { quoted: m, userJid: conn.user.jid }
-    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] تنبيه - إشعار', body: 'ᴛʜᴇ shadow - ʙᴏᴛ', thumbnail: imagen1, sourceUrl: 'https://github.com/BrunoSobrino/TheMystic-Bot-MD' }}}}, aa)
+    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] تنبيه - إشعار', body: 'Ulquiorra- Bot', thumbnail: imagen1, sourceUrl: 'https://wa.me/201225188065' }}}}, aa)
     if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
     //if (msg) return m.reply(msg)
 }
