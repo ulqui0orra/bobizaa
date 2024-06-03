@@ -4,7 +4,7 @@ conn.reply(m.chat,`*┌────「✨  𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒 
 }
 handler.help = ['صراحه']
 handler.tags = ['Reall']
-handler.command = /^صراحه|صراحة/i
+handler.command = /^فكك/i
 export default handler
 
 function pickRandom(list) {
