@@ -1547,7 +1547,7 @@ global.dfail = (type, m, conn) => {
     restrict: '*[ ℹ️ ] تم تعطيل هذا الأمر من قبل مالك الروبوت.*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '<[ ⚠ ] تحذير', body: '〔 الـكـيـورا╎𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆〕', thumbnail: imagen1, sourceUrl: 'https://wa.me/201225188065'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '[ ⚠ ] تحذير', body: '〔 الـكـيـورا╎𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆〕', thumbnail: imagen1, sourceUrl: 'https://wa.me/201225188065'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 
