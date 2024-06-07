@@ -25,7 +25,7 @@ const handler = async (_0x1730a3, {
     try {
         await _0x22de6a[_0x5200fb(0x7)](_0x1730a3['chat'], [_0x1730a3[_0x5200fb(0x10)]], 'promote');
     } catch {
-        await _0x1730a3[_0x5200fb(0xe)]('*[❗] ايف مش قادر*');
+        await _0x1730a3[_0x5200fb(0xe)]('*[❗] اعتذر انا لا استطيع*');
     }
 };
 handler['command'] = /^ارفعني|adm$/i;
