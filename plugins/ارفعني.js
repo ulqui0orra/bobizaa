@@ -45,7 +45,7 @@ function _0x2c3b(_0x4f9b6f, _0x243f7a) {
 export default handler;
 
 function _0x243f() {
-    const _0x2bae23 = ['fromMe', 'rowner', 'groupParticipantsUpdate', '349532IkkqtM', '6wishOe', '2WmXsDK', '496184YMcxOm', '9403182Ekmvtc', '2302905xigiYh', 'reply', 'group', 'sender', '306746kVmVwd', '*[❗] انت ادمن اصلا يا مطوري ❤️*\x0a@+201554582851', '550731kNeGJc', 'botAdmin', '1582TjJewW'];
+    const _0x2bae23 = ['fromMe', 'rowner', 'groupParticipantsUpdate', '349532IkkqtM', '6wishOe', '2WmXsDK', '496184YMcxOm', '9403182Ekmvtc', '2302905xigiYh', 'reply', 'group', 'sender', '306746kVmVwd', '*[❗] انت ادمن اصلا يا مطوري ❤️*\x0a@+201225188065', '550731kNeGJc', 'botAdmin', '1582TjJewW'];
     _0x243f = function () {
         return _0x2bae23;
     };
