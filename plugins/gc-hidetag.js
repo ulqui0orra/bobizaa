@@ -1,27 +1,17 @@
-import MessageType from '@adiwajshing/baileys'
-import { generateWAMessageFromContent } from '@adiwajshing/baileys'
+//by: harley_light
 
-let handler = async (m, { conn, text, participants }) => {
-let users = participants.map(u => conn.decodeJid(u.id))
-let q = m.quoted ? m.quoted : m
-let c = m.quoted ? m.quoted : m.msg
-const msg = conn.cMod(m.chat,
-generateWAMessageFromContent(m.chat, {
-[c.toJSON ? q.mtype : 'extendedTextMessage']: c.toJSON ? c.toJSON() : {
-text: c || ''
+let handler = async (m, { conn, text, participants}) => {
+	
+    let users = participants.map(u => u.id).filter(v => v !== conn.user.jid)
+    if (!m.quoted) throw `✳️ منشن الرسالة`
+    conn.sendMessage(m.chat, { forward: m.quoted.fakeObj, mentions: users } )
 }
-}, {
-quoted: m,
-userJid: conn.user.id
-}),
-text || q.text, conn.user.jid, { mentions: users }
-)
-await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
-}
-handler.help = ['hidetag']
+
+handler.help = ['totag']
 handler.tags = ['group']
-handler.command = ['مخفي'] 
-handler.group = true
+handler.command = /^مخفي$/i
+
 handler.admin = true
+handler.group = true
 
 export default handler
