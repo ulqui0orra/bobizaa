@@ -6,14 +6,15 @@ let handler = m => m;
  if (/^الكيورا$/i.test(m.text)) { 
  responses = [ 
  '؟',
-   'تفضل',
+   'تفضل.',
    'نعم؟'
  ]; 
  } else if (/^بوووت|بموووووووووت|بوت$/i.test(m.text)) { 
      responses = [ 
-'تفضل',
+'تفضل.',
    '؟',
-   'نعم؟'
+   'نعم؟',
+      '*البوت شغال.*'
      ]; 
    } else if (/^اوامر$/i.test(m.text)) { 
      responses = [ 
