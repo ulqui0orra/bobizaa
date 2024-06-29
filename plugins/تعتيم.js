@@ -12,10 +12,10 @@ const handler = async (m, {conn, text}) => {
   const level = text || '5'; const img = await jimp.read(image);
   img.blur(isNaN(level) ? 5 : parseInt(level));
   img.getBuffer('image/jpeg', (err, buffer) => {
-    if (err) throw err?.message || `Couldn't blur the image`;
+    if (err) throw err?.message || `لا استطيع تعتيم الصورة.`;
     m.reply(buffer);
   });
 };
-handler.command = /^(bluur)$/i;
+handler.command = /^(طمس|تعتيم)$/i;
 
 export default handler;
