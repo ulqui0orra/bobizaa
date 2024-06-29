@@ -1,18 +1,18 @@
-import {toPTT} from '../lib/converter.js';
+import {toAudio} from '../lib/converter.js';
+
 const handler = async (m, {conn, usedPrefix, command}) => {
   const q = m.quoted ? m.quoted : m;
   const mime = (m.quoted ? m.quoted : m.msg).mimetype || '';
-  if (!/video|audio/.test(mime)) throw `*[💾مساعده💾]قم بالرد علي الفيديو او الاغنيه اللي عايز تحولها لريكورد*`;
+  if (!/video|audio/.test(mime)) throw `الرد على الفيديو/الملاحظة الصوتية التي تريد تحويلها إلى صوت/mp3 مع التسمية التوضيحية *${usedPrefix + command}*`;
   const media = await q.download?.();
-  if (!media && !/video/.test(mime)) throw '*الحجم كبير*';
-  if (!media && !/audio/.test(mime)) throw '*الحجم كبير*';
-  const audio = await toPTT(media, 'mp4');
-  if (!audio.data && !/audio/.test(mime)) throw '*[❗تحذير❗] حصل خطأ*';
-  if (!audio.data && !/video/.test(mime)) throw '*[❗تحذير❗] حصل خطأ*';
-  const aa = conn.sendFile(m.chat, audio.data, 'error.mp3', '', m, true, {mimetype: 'audio/mpeg'});
-  if (!aa) return conn.sendMessage(m.chat, {audio: {url: media}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  if (!media) throw 'Can\'t download media';
+  const audio = await toAudio(media, 'mp4');
+  if (!audio.data) throw 'Can\'t convert media to audio';
+  conn.sendFile(m.chat, audio.data, 'audio.mp3', '', m, null, {mimetype: 'audio/mp4'});
 };
-handler.help = ['tovn (reply)'];
+handler.help = ['tomp3'].map((v) => v + ' <reply>');
 handler.tags = ['audio'];
-handler.command = /^لريك|to(vn)$/i;
+
+handler.command = /^to(ريك|ل(ريك)?)$/i;
+
 export default handler;
