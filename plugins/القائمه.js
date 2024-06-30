@@ -267,8 +267,8 @@ mediaUrl: null,
 title: '『👑┇𝔘𝔩𝔮𝔲𝔦𝔬𝔯𝔯𝔞┇🤖┇𝔅𝔬𝔱┇👑』',
 body: null,
 thumbnail: img,
-sourceUrl: `https://telegra.ph/file/10cad77e84a09367e8695.png`
-    conn.sendMessage(m.chat, {react: {text: '📁', key: abrazo.key}});
+sourceUrl: `https://telegra.ph/file/5aa73a371ea32c99d3b4e.jpg`
+
 }}}
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
