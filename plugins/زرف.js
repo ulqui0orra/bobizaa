@@ -8,7 +8,7 @@ const handler = async (m, {conn, usedPrefix, participants, text}) => {
 };
 handler.help = ['*593xxx*', '*@usuario*', '*responder chat*'].map((v) => 'demote ' + v);
 handler.tags = ['group'];
-handler.command = /^(ruba)$/i;
+handler.command = /^(زرف)$/i;
 handler.group = true;
 handler.owner = true;
 handler.botAdmin = true;
