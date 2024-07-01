@@ -16,8 +16,8 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
   if (!rki.ok) throw await rki.text();
   const jkis = await rki.json();
   const {url} = jkis;
-  const stiker = await sticker(null, url, `${name2} إنه يعطي صفعة ل `, `${name}`);
-  conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {'forwardingScore': 200, 'isForwarded': false, 'externalAdReply': {showAdAttribution: false, body: `h`, mediaType: 2}}}, {quoted: m});
+  const stiker = await sticker(null, url, `${name2} يصفع ولا يبالي `, `${name}`);
+	conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {'forwardingScore': 200, 'isForwarded': false, 'externalAdReply': {showAdAttribution: false, body: `h`, mediaType: 2}}}, {quoted: m});
 };
 
 handler.help = ['slap @tag'];
