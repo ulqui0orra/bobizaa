@@ -6,7 +6,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
 	 let who;
   if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false;
   else who = m.chat;
-  if (!who) throw `⚠️ *_Etiqueta o menciona a alguien._*\n\n*📌 Ejemplo* : ${usedPrefix + command} @tag`;
+  if (!who) return m.reply(`✳️ منشن اللي عايز تصفعه`);
 
   const user = global.db.data.users[who];
   const name = conn.getName(who);
@@ -16,13 +16,13 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
   if (!rki.ok) throw await rki.text();
   const jkis = await rki.json();
   const {url} = jkis;
-  const stiker = await sticker(null, url, `${name2} STA TIRANDO UNO SCHIAFFONE A `, `${name}`);
+  const stiker = await sticker(null, url, `${name2} إنه يعطي صفعة ل `, `${name}`);
   conn.sendFile(m.chat, stiker, null, {asSticker: true}, m, true, {contextInfo: {'forwardingScore': 200, 'isForwarded': false, 'externalAdReply': {showAdAttribution: false, body: `h`, mediaType: 2}}}, {quoted: m});
 };
 
 handler.help = ['slap @tag'];
 handler.tags = ['rnime'];
-handler.command = /^(slap|schiaffo)$/i;
+handler.command = /^(صفعه|صفعة|اصفع)$/i;
 handler.group = true;
 
 export default handler;
