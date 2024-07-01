@@ -44,7 +44,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
     teks += ┣➥ @${mem.id.split('@')[0]} \n;
   }
 
-  teks += *└*  *✦━━━━━━[ 𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒 ]━━━━━━✦*;
+  teks += *└*  𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒 \n\n*❂━━━ • ━━━ • ━━━ • ━━━❂*;
   conn.sendMessage(m.chat, { text: teks, mentions: participants.map((a) => a.id) });
 };
 
