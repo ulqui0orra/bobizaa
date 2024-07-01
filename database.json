@@ -917,11 +917,11 @@
   "settings": {
     "212637147800@s.whatsapp.net": {
       "self": false,
-      "autoread": true,
-      "autoread2": true,
+      "autoread": false,
+      "autoread2": false,
       "restrict": false,
-      "antiCall": true,
-      "antiPrivate": true,
+      "antiCall": false,
+      "antiPrivate": false,
       "modejadibot": true,
       "antispam": false,
       "audios_bot": true,
