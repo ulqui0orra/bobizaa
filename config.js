@@ -7,7 +7,7 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-global.botnumber = "201508946284"
+global.botnumber = ""
 
 global.owner = [
   
@@ -17,13 +17,13 @@ global.owner = [
 global.suittag = ['201225188065'];
 global.prems = ['201225188065'];
 
-global.packname = '𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒';
-global.author = '𝔹𝕠𝕥';
-global.wm = '𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒';
-global.titulowm = '𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒';
-global.titulowm2 = `𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒`
-global.igfg = '𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒';
-global.wait = '*|🏃| loading...*\n*نحاول تلبية طلبكم لا تستعجلوا* ♥';
+global.packname = '𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆';
+global.author = 'الـكـيـورا';
+global.wm = '𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆';
+global.titulowm = '𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆';
+global.titulowm2 = `𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆`
+global.igfg = '𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆';
+global.wait = '*انتظر لحظه.*';
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
