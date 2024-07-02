@@ -2,7 +2,7 @@ import TicTacToe from '../lib/tictactoe.js'
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 conn.game = conn.game ? conn.game : {}
 if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw '*[❗] انت مازلت في روم شخص ما*'
-if (!text) throw `*[❗] مطلوب وضع اسم للروم اسم  *\n\n*—◉ مثال*\n*◉ ${usedPrefix + command} روم جديه*`
+if (!text) throw `*[❗] مطلوب وضع اسم للروم اسم  *\n\n*—◉ مثال*\n*◉ ${usedPrefix + command} روم الكيورا*`
 let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
 if (room) {
 await m.reply('*[🕹️] ابدأ اللعبه التي انضم اليها احد اللاعبين*')
