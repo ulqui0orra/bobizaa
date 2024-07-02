@@ -1,9 +1,14 @@
-let handler = async (m) => {
-global.db.data.chats[m.chat].isBanned = true
-m.reply('*[❗] تم حظر هذه الدردشة بنجاح*\n\n*—◉ سوف يتفاعل الروبوت مع أي أمر حتى تقوم بإلغاء حظر هذه الدردشة*')
+let handler = async (m, { conn, isOwner, isAdmin, isROwner }) => {
+    if (!(isAdmin || isOwner)) return dfail('admin', m, conn)
+    global.db.data.chats[m.chat].isBanned = true
+    m.reply('✅ تم تعطيل البوت في هذه المجموعة')
 }
 handler.help = ['banchat']
 handler.tags = ['owner']
-handler.command = /^حظر$/i
-handler.rowner = true
+handler.command = ['حظر']
+
+handler.group = true
+handler.owner = true
+handler.admin = true
+
 export default handler
