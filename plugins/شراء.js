@@ -12,7 +12,7 @@ const handler = async (m, {conn, command, args}) => {
 ⌯ الكيمة : + ${count}💎 
 ⌯ الفلوس : -${xpperlimit * count} XP
 └──────────────`, m);
-  } else conn.reply(m.chat, `[❣️]~ اسفة معكش خبرة عشان تشتري ${count} ماس 💎`, m);
+  } else conn.reply(m.chat, `[❣️]~ معكش خبرة عشان تشتري ${count} ماس 💎`, m);
 };
 handler.help = ['S H A D O W'];
 handler.tags = ['S H A D O W'];
