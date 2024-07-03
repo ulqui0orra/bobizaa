@@ -24,32 +24,32 @@ const handler = async (m, { conn }) => {
   
   await conn.sendMessage(m.chat, {
     text: `\`\`\`
-هذه الميزة من طرف احد المتابعين شكرا له ♥\n\n「*التوقيت حاليا في بعض البلدان العربية*⏰ 」\n
+「*التوقيت حاليا في بعض البلدان العربية*⏰ 」\n
 
-Arab Countries:
+الدول العربية:
 
-🕒 Riyadh       : ${fechariy}
-🕒 Cairo        : ${fechacai}
-🕒 Baghdad      : ${fechabgd}
-🕒 Beirut       : ${fechabei}
-🕒 Kuwait       : ${fechakwt}
-🕒 Damascus     : ${fechasyr}
-🕒 Doha         : ${fechadoh}
-🕒 Tripoli      : ${fechalby}
-🕒 Dubai        : ${fechayem}
-🕒 Muscat       : ${fechamus}
+🕒 الرياض         : ${fechariy}
+🕒 القاهرة          : ${fechacai}
+🕒 بغداد           : ${fechabgd}
+🕒 بيروت          : ${fechabei}
+🕒 الكويت          : ${fechakwt}
+🕒 دمشق          : ${fechasyr}
+🕒 الدوحة          : ${fechadoh}
+🕒 طرابلس         : ${fechalby}
+🕒 دبي           : ${fechayem}
+🕒 مسقط          : ${fechamus}
 
 African Countries:
 
-🕒 Lagos        : ${fechalagos}
-🕒 Accra        : ${fecaccra}
-🕒 Casablanca   : ${feccasablanca}
-🕒 Algiers      : ${fecalgiers}
-🕒 Kinshasa     : ${fecakinshasa}
-🕒 Johannesburg : ${fecajohannesburg}
-🕒 Nairobi      : ${fecanairobi}
-🕒 Khartoum     : ${fecakhartoum}
-🕒 Libreville   : ${fecalibreville}
+🕒 لاغوس          : ${fechalagos}
+🕒 أكرا            : ${fecaccra}
+🕒 الدار البيضاء       : ${feccasablanca}
+🕒 الجزائر          : ${fecalgiers}
+🕒 كينشاسا          : ${fecakinshasa}
+🕒 جوهانسبرغ        : ${fecajohannesburg}
+🕒 نيروبي           : ${fecanairobi}
+🕒 الخرطوم          : ${fecakhartoum}
+🕒 ليبرفيل           : ${fecalibreville}
 \`\`\`
 ${String.fromCharCode(8206).repeat(850)}
 Current Server Time Zone:
@@ -60,6 +60,6 @@ ${moment().tz(Intl.DateTimeFormat().resolvedOptions().timeZone).format('DD/MM/YY
 
 handler.help = ['horario'];
 handler.tags = ['info'];
-handler.command = /^(timezone)$/i;
+handler.command = /^(الوقت)$/i;
 
 export default handler;
