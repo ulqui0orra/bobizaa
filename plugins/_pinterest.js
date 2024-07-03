@@ -17,7 +17,7 @@ let handler = async (m, {
     text,
     command
 }) => {
-    if (!text) return m.reply("هذا الأمر خاص بتحميل الصور من pinterest\nنكتب هكذا مثلا :\n*.pinterest naruto*")
+    if (!text) return m.reply("هذا الأمر خاص بتحميل الصور من بينترست\nنكتب هكذا مثلا :\n*.بينترست الكيورا*")
     await m.reply(wait)
 
     let res1, res2, res3, res4, res5;
