@@ -125,7 +125,7 @@ let handler = async (m, {
 }
 handler.help = ["pinterest"]
 handler.tags = ["internet"]
-handler.command = /^(pinterest)$/i
+handler.command = /^(بينترست)$/i
 export default handler
 
 /* New Line */
