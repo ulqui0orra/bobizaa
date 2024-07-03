@@ -10,11 +10,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }) * 1000
     }
     let muptime = clockString(_muptime)
-   m.reply(`🎯 *Bot Active Duration*  \n\n${muptime}`) 
+   m.reply(`🎯 *مدة نشاط البوت*  \n\n${muptime}`) 
 }
 handler.help = ['runtime']
 handler.tags = ['main']
-handler.command = ['runtime', 'uptime']
+handler.command = ['runtime', 'نشاط']
 export default handler
 
 function clockString(ms) {
