@@ -27,7 +27,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
      }
     ]
    })
-   m.reply('تم بنجاح تغيير صورة بروفيل البوت')
+   m.reply('تم بنجاح تغيير صورة بروفايل البوت')
   } catch (e) {
    console.log(e)
    m.reply('حدث خطأ، حاول مرة أخرى لاحقًا')
