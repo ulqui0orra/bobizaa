@@ -26,7 +26,7 @@ let timeout = 0xea60,
             _0x272796[_0x1157bc(0x151)](_0x396118[_0x1157bc(0x158)], '❐┃لم يتم الاجابة علي السؤال بعد┃❌ ❯', _0x272796[_0x1157bc(0x15d)][_0x5a7384][0x0]);
             throw ![];
         }
-        let _0x440484 = await (await fetch('https://gist.githubusercontent.com/ulqui0orra/2ab4b51ecbf235d45d86b244aac6f23f/raw/524dfa9ca1e8ad1f873aca261d87d1d4f7888acf/gistfile1.txt'))[_0x1157bc(0x169)](),
+        let _0x440484 = await (await fetch('https://gist.githubusercontent.com/ulqui0orra/c7914c0b69a46a8e905e5b044b1507fb/raw/9607bc3cd6ff1f4165c9fca75c7c14b3497855ec/guessflag'))[_0x1157bc(0x169)](),
             _0x5a9156 = _0x440484[Math['floor'](Math['random']() * _0x440484[_0x1157bc(0x155)])],
             _0x180c38 = ('*' + _0x524bc1[_0x1157bc(0x152)]() + _0x1157bc(0x156) + (timeout / 0x3e8)[_0x1157bc(0x168)](0x2) + ' ┇\x0a  *استخدم .انسحب للأنسحاب*\x0a  ❐↞┇الـجـائـزة💰↞ ' + poin + ' نقاط┇\x0a『🍷𝕌𝕝𝕢𝕦𝕚𝕠𝕣𝕣𝕒┊🤖┊𝔹𝕠𝕥🍷』\x0a     ')[_0x1157bc(0x15a)]();
         _0x272796[_0x1157bc(0x15d)][_0x5a7384] = [await _0x272796[_0x1157bc(0x150)](_0x396118[_0x1157bc(0x158)], _0x5a9156[_0x1157bc(0x15c)], '', _0x180c38, _0x396118), _0x5a9156, poin, setTimeout(() => {
