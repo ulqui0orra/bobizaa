@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 m.reply(global.terminos)}
-handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|privacidad|الاستخدام|الخصوصيه|الخصوصية|الخصوصيه ولا الاستخدام|شروط الخصوصية|شروط الخصوصيه|شروط الاستخدام/i
+handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|الشروط|الاستخدام|الخصوصيه|الخصوصية|الخصوصيه ولا الاستخدام|شروط الخصوصية|شروط الخصوصيه|شروط الاستخدام/i
 handler.command = new RegExp
 export default handler
 
@@ -45,4 +45,4 @@ global.terminos = `
 
 -----------------
 
- *𝐔𝐥𝐪𝐮𝐢𝐨𝐫𝐫𝐚 𝐁𝐨𝐭 *`
+ *𝐔𝐥𝐪𝐮𝐢𝐨𝐫𝐫𝐚 𝐁𝐨𝐭*`
