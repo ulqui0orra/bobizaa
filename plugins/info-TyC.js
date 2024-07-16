@@ -33,7 +33,7 @@ global.terminos = `
 
 -----------------
 انستا المطور 
-❈↲ https://www.instagram.com/flikelkobtan.1
+❈↲ https://www.instagram.com/ulqui0orra
 
 -----------------
 رابط صفحة اليوتيوب : 
