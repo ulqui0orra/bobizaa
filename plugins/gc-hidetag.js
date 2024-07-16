@@ -35,6 +35,6 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
   }
 };
 handler.command = /^(مخفي|مخفى)$/i;
-handler.group = true;
 handler.admin = true;
+handler.group = true;
 export default handler;
