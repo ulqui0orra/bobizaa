@@ -10,22 +10,23 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['201225188065', '〔الـكـيـورا╎𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆〕', true],
+  ['212717457920', 'bobiza', true],
 
-  ['201225188065','〔الـكـيـورا╎𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆〕', true]
-
+  ['212717457920','bobiza', true],
+  ['212717457920'],
+  ['212717457920']
 ];
 
-global.suittag = ['201225188065'];
-global.prems = ['201225188065'];
+global.suittag = ['212717457920'];
+global.prems = ['212717457920'];
 
-global.packname = '𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆';
-global.author = 'الـكـيـورا';
-global.wm = '𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆';
-global.titulowm = '𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆';
-global.titulowm2 = `𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆`
-global.igfg = '𝖀𝖑𝖖𝖚𝖎𝖔𝖗𝖗𝖆';
-global.wait = '*انتظر لحظه.*';
+global.packname = 'bobiza bot';
+global.author = 'bobiza';
+global.wm = 'bobiza';
+global.titulowm = 'bobiza';
+global.titulowm2 = `bobiza`
+global.igfg = 'bobiza';
+global.wait = '*|🏃| loading...*\n*نحاول تلبية طلبكم لا تستعجلوا* ♥\ninstagram.com/noureddine_ouafy';
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
@@ -47,12 +48,12 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 global.wm2 = `${dia} ${fecha}\nBOBIZA`;
 global.gt = 'BOBIZA';
 global.mysticbot = 'The BOBIZA';
-global.md = 'https://wa.me/201225188065';
-global.mysticbot = 'https://wa.me/201225188065';
+global.md = 'https://instagram.com/noureddine_ouafy';
+global.mysticbot = 'https://instagram.com/noureddine_ouafy';
 global.waitt = '*[ ⏳ ] LOADING...*';
 global.waittt = '*[ ⏳ ] LOADING...*';
 global.waitttt = '*[ ⏳ ] LOADING...*';
-global.nomorown = '201225188065';
+global.nomorown = '212605784394';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
@@ -67,8 +68,8 @@ global.htki = '*⭑•̩̩͙⊱•••• ☪*';
 global.htka = '*☪ ••••̩̩͙⊰•⭑*';
 global.comienzo = '• • ◕◕════';
 global.fin = '════◕◕ • •';
-global.botdate = `*[ 📅 ] Date:*  ${moment.tz('America/Mexico_City').format('DD/MM/YY')}`;
-global.bottime = `*[ ⏳ ] Hour:* ${moment.tz('America/Mexico_City').format('HH:mm:ss')}`;
+global.botdate = `*[ 📅 ] Fecha:*  ${moment.tz('America/Mexico_City').format('DD/MM/YY')}`;
+global.bottime = `*[ ⏳ ] Hora:* ${moment.tz('America/Mexico_City').format('HH:mm:ss')}`;
 global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage': {'title': wm, 'h': `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': bottime, 'jpegThumbnail': fs.readFileSync('./Menu.png')}}};
 global.multiplier = 99;
 global.flaaa = [
